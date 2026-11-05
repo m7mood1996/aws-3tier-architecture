@@ -1,0 +1,36 @@
+# Terraform working directory (providers, modules)
+.terraform/
+
+# State files: these contain resource IDs and secrets (e.g. DB passwords) in plain text
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files: these often hold secrets
+*.tfvars
+*.tfvars.json
+# Uncomment and add an example file if you want to share variable names:
+# !example.tfvars
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Saved plan files
+*.tfplan
+tfplan
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
